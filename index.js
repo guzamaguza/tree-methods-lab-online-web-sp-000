@@ -8,11 +8,21 @@ function inOrder(currentNode){
   }
 }
 
-function findOrAdd(rootNode, newNode){
-  if rootNode < newNode{
-
-  }else {
-    rootNode = newNode
+function findOrAdd(currentNode, newNode){
+  if (currentNode.data == newNode.data){
+    return true 
+  }else if(currentNode.data > newNode.data){
+      if(currentNode.left){
+        return findOrAdd(currentNode.left, newNode)
+      }else{
+        return currentNode.left = newNode;
+      }
+  }else if(currentNode.data < newNode.data){
+      if(currentNode.right){
+        return findOrAdd(currentNode.right, newNode)
+      }else{
+        return currentNode.right = newNode;
+      }
   }
 }
 
