@@ -10,7 +10,7 @@ function inOrder(currentNode){
 
 function findOrAdd(currentNode, newNode){
   if (currentNode.data == newNode.data){
-    return true 
+    return true
   }else if(currentNode.data > newNode.data){
       if(currentNode.left){
         return findOrAdd(currentNode.left, newNode)
