@@ -8,8 +8,12 @@ function inOrder(currentNode){
   }
 }
 
-function findOrAdd(){
-
+function findOrAdd(rootNode, newNode){
+  if rootNode < newNode{
+    
+  }else {
+    rootNode = newNode 
+  }
 }
 
 function max(){
