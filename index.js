@@ -26,10 +26,18 @@ function findOrAdd(currentNode, newNode){
   }
 }
 
-function max(){
-
+function max(node){
+  if(node.right){
+    max(node.right);
+  }else{
+    return node;
+  }
 }
 
-function min(){
-
+function min(node){
+  if(node.left){
+    return min(node.left);
+  }else{
+    return node;
+  }
 }
