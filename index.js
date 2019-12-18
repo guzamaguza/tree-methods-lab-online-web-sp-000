@@ -9,7 +9,7 @@ function inOrder(currentNode){
 }
 
 function findOrAdd(){
-  
+
 }
 
 function max(){
@@ -17,5 +17,5 @@ function max(){
 }
 
 function min(){
-  
+
 }
